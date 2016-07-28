@@ -13,6 +13,8 @@ obj-y += help.o
 obj-y += version.o
 
 # command
+obj-$(CONFIG_CMD_QUOTES) += printquotes.o
+obj-$(CONFIG_CMD_CLEAR) += clear.o
 obj-$(CONFIG_CMD_AES) += aes.o
 obj-$(CONFIG_CMD_AMBAPP) += ambapp.o
 obj-$(CONFIG_CMD_ARMFLASH) += armflash.o
